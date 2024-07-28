@@ -2,6 +2,7 @@
 require "json"
 
 package_json = JSON.parse(File.read("package.json"))
+version = package_json["version"]
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-chirpy"
