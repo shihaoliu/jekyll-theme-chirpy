@@ -1,11 +1,8 @@
 # frozen_string_literal: true
-require "json"
-
-package_json = JSON.parse(File.read("package.json"))
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-chirpy"
-  spec.version       = package_json["version"]
+  spec.version       = "7.0.1"
   spec.authors       = ["Cotes Chung"]
   spec.email         = ["cotes.chung@gmail.com"]
 
